@@ -1044,3 +1044,6 @@ footer .attribution a{
         font-size: .9rem;
     }
 }
+#footertxt{
+    color:hsl(231, 69%, 60%) ;
+}
