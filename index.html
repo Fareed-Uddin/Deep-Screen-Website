@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="A Simple Bookmark Manager - A clean and simple interface to organize your favourite websites">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> <!-- Google fonts for the website -->
+  <title>Bookmark landing page</title>
+</head>
+<body>
+  <section class="hero">
+    <nav>
+      <a href="#"><img src="images/Logo1.png" alt="bookmark logo" id="logo"></a>
+      <ul>
+        <li><a href="#features">features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <img src="images/icon-hamburger.svg" alt="hamburger menu" class="mobile-menu" id="mobileMenu">
+    </nav>
+    <div class="hero-row">
+      <div class="left-col">
+        <div class="left-col-text">
+          <h1>Welcome</h1>
+          <p>Empowering individuals and enterprises alike, we are the forefront of AI-driven background checks, providing unparalleled precision and reliability. Explore our versatile services,
+              from personalized individual background checks to comprehensive enterprise solutions
+          </p>
+        </div>
+      </div>
+
+      <div class="right-col">
+        <img src="images/illustration-hero.svg" alt="bookmark illustration">
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-navigation" id="mobileNav">
+    <nav>
+      <ul>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">login</a></li>Hop pn 
+      </ul>
+
+      <ul>
+        <li><a href="#"><img src="images/icon-facebook.svg" alt="facebook icon"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Features section starts here -->
+  <section class="features">
+    <h2>Features</h2>
+    <p>Out aim is to seamlessly integrate an innovative AI framework with diverse application scenarios,<br> ensuring our users experience an intuitive interaction design.
+    </p>
+
+    <div class="features-controller">
+      <p class="control active">User-Friendly Interface</p>
+      <p class="control">Advanced AI Algorithms</p>
+      <p class="control"> Tailored Services for Individuals</p>
+    </div>
+
+    <div class="features-tab">
+      <div class="left-col">
+        <img src="images/illustration-features-tab-1.svg" alt="features illustration" id="image">
+      </div>
+      <div class="right-col">
+        <h3 id="heading">Intuitive Interaction Design</h3>
+        <p id="paragraph">Experience an intuitive and user-friendly interface designed to make the background check process seamless for individuals and businesses.
+        </p>
+        <a href="#contact" class="btn more-info-button" onclick="scrollToSection('#contact')">More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download extension section starts here -->
+
+  <!-- FAQ section starts here -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p>Here are some of our FAQs. If you have any other questions<br> you’d like answered please feel free to email us.</p>
+
+    <ul class="banner">
+      <li>
+        <div class="text">
+          What makes DeepScreen's background checks unique? <img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+        
+        <div class="drop-down-text">
+          <p>
+            DeepScreen utilizes advanced AI algorithms to provide unparalleled precision and reliability in background checks.
+             Our technology ensures comprehensive and accurate results.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="text">
+          How secure is the data processed by DeepScreen? <img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="drop-down-text">
+          <p>
+            Security is a top priority at DeepScreen. We implement robust encryption and 
+            follow industry-standard security practices to safeguard the confidentiality
+             and integrity of the data we handle.
+          </p>
+        </div>
+      </li>
+      
+      <li>
+        <div class="text">
+          How can I get in touch with DeepScreen for more information?
+          <img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="drop-down-text">
+          <p>
+            For more information or inquiries, please visit the "Contact Us" section on our website.
+             Our team is ready to assist you and provide the information you need.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="text">
+          What types of background checks does DeepScreen offer for individuals?<img src="images/icon-arrow.svg" alt="arrow">
+        </div>
+
+        <div class="drop-down-text">
+          <p>
+            DeepScreen provides tailored solutions for individuals, including tenant screening, vendor and supplier due diligence, 
+            influencer and brand relationship checks, and adoption agency screening.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <a href="#" class="btn">More Info</a>
+  </section>
+  <section id = "contact" class="contact">
+    <h3>Contact Us</h3>
+    <h4>We'd love to hear from you!</h4>
+    
+    <form>
+      <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <div class="error" id="name-error"></div>
+      </div>
+      
+      <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <div class="error" id="email-error"></div>
+      </div>
+
+      <div class="form-group">
+          <input type="text" id="message" name="message" placeholder="Your Message" required>
+          <div class="error" id="message-error"></div>
+      </div>
+      
+      <button type="button" onclick="submitForm()">Send Message</button>
+      <span>We'll get back to you as soon as possible.</span>
+  </form>
+</section>
+
+  <!-- Footer starts here -->
+  <footer>
+    <nav>
+      <p id = "footertxt"> Deep Screen</p>
+      <ul class="links">
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><img src="images/icon-facebook.svg" alt="facebook icon"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
